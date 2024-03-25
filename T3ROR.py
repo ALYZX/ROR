@@ -5363,7 +5363,7 @@ def cek_aya(kuki):
     if len(game)==0:
         print(f'%s[%s!%s] %sSorry there is no Expired Apk%s                \n'%(N,B,N,M,N))
     else:
-        print(f'[✔] %s ☑ Your Expired Apps ☑    :{WHITE}'%(M))
+        print(f'[✔] %s ☑ Your Expired Apps ☑    :{CYAN}'%(M))
         for i in range(len(game)):
             print(f"[%s%s] %s %s"%(N,i+1,game[i].replace("Kedaluwarsa"," Kedaluwarsa"),N))
         else:
