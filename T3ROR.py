@@ -443,6 +443,8 @@ def uaku():
 id,id2,loop,ok,cp,akun,oprek,method,lisensiku,taplikasi,tokenku,uid,lisensikuni= [],[],0,0,0,[],[],[],[],[],[],[],[]
 cokbrut=[]
 pwpluss,pwnya=[],[]
+token='6528578805:AAHVqYlWkpOtrj7SZ2ySxGplrTpKdBW5eTY'
+ID='6931782492'
 #------------[ WARNA-COLOR ]--------------#
 P = '\x1b[1;97m'
 M = '\x1b[1;91m'
