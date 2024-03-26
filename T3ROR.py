@@ -381,9 +381,9 @@ ses=requests.Session()
 princp=[]
 try:
 	PROXY = requests.get('https://raw.githubusercontent.com/TheSpeedX/PROXY-List/master/socks4.txt').text
-	open('PROXYZ.txt','w').write(PROXY)
+	open('PROXY-RAJY.txt','w').write(PROXY)
 except:pass
-PROXY=open('PROXYZ.txt','r').read().splitlines()
+PROXY=open('PROXY-RAJY.txt','r').read().splitlines()
 def generate_user_agent_android():
     version_a = f'{random.randrange(1, 9)}.{random.randrange(1, 9)}'
     device_a = '11; Redmi Note 5A Lite)'
