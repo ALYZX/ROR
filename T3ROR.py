@@ -1,39 +1,8 @@
-import requests
-import random
-import os
-import uuid
-import json
-import user_agent
-import time
-import sys
-import socket
-import datetime
-from datetime import date
-
-name = 'xdZwuHHS'  # تعريف المتغير name هنا
-
-def chk():
-    uuid = str(os.geteuid()) + str(os.getlogin())
-    id = "-".join(uuid)
-    print("   \x1b[1;38;5;121m[𝗬𝗢𝗨𝗥 𝗞𝗘𝗬]-[ مفتأحك ] : " + id)
-    try:
-        httpChat = requests.get("https://pastebin.com/raw/GTs1hmei").text
-        if id in httpChat:
-            print("   \x1b[38;5;161mتم التحقق بنجاح")
-            msg = str(os.geteuid())
-            time.sleep(1)
-            pass
-        else:
-            print("   \x1b[1;93m لم يتم العثور على اشتراكك vip خاص بك")
-            print("   \x1b[38;5;208mفضلاً قم بزيارة صفحة التواصل لل اشتراك في المدفوع [@R_A_J_Y-@K_L_D")
-            time.sleep(1)
-            sys.exit()
-    except Exception as e:
-        print("\033[1;30mخطأ ما حدث: ", e)
-        sys.exit()
-
-for _ in range(3):
-    chk()
+import requests,os,sys,random, re
+from rich.console import Console as NETWORK_KURD
+from concurrent.futures import ThreadPoolExecutor as THREADING
+from rich.panel import Panel as ALOAN
+from rich import print as PRENTO
 import os
 import requests
 import time
