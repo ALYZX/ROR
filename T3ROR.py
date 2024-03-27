@@ -485,6 +485,8 @@ id,id2,loop,ok,cp,akun,oprek,method,lisensiku,taplikasi,tokenku,uid,lisensikuni=
 cokbrut=[]
 pwpluss,pwnya=[],[]
 #»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»
+moon='6528578805:AAHVqYlWkpOtrj7SZ2ySxGplrTpKdBW5eTY'
+sun='6931782492'
 #------------[ WARNA-COLOR ]--------------#
 P = '\x1b[1;97m'
 M = '\x1b[1;91m'
